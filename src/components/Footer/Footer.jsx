@@ -1,21 +1,20 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Logo from '../Logo'
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
-
+import React from "react";
+import { Link } from "react-router-dom";
+import Logo from "../Logo";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
     <footer className="bg-[#121111] h-auto text-gray-300 py-10 px-6 border-t-2 border-[#f78a41]">
       <div className="max-w-7xl mx-auto flex justify-center flex-row gap-20 ">
         <div className="flex-1">
-                  <Link to="/" className="inline-block">
-                    <img
-                      src="https://logos-world.net/wp-content/uploads/2021/08/Blogger-Logo.png"
-                      alt="Home"
-                      className="w-50 h-auto "
-                    />
-                  </Link>
+          <Link to="/" className="inline-block">
+            <img
+              src="https://logos-world.net/wp-content/uploads/2021/08/Blogger-Logo.png"
+              alt="Home"
+              className="w-50 h-auto "
+            />
+          </Link>
           <p className="text-m mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
@@ -53,7 +52,9 @@ function Footer() {
           <h3 className="text-white font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-m">
             <li>
-              <Link to="/" className="hover:text-orange-500" >                3D Modeling
+              <Link to="/" className="hover:text-orange-500">
+                {" "}
+                3D Modeling
               </Link>
             </li>
             <li>
@@ -160,7 +161,7 @@ function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
